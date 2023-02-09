@@ -1,4 +1,6 @@
-import './globals.css'
+"use client";
+
+import { NextUIProvider } from "@nextui-org/react";
 
 export default function RootLayout({
   children,
@@ -7,12 +9,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
+        {/*
+          <head /> will contain the components returned by the nearest parent
+          head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>{children}</body>
+        <body>
+          <NextUIProvider>
+          {children}
+          </NextUIProvider>
+        </body>
     </html>
   )
 }
