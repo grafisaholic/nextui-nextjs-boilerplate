@@ -1,22 +1,22 @@
 "use client";
 
-import { Grid } from '@nextui-org/react'
+import { Grid } from "@nextui-org/react";
 
-import SomeText from '@/app/components/some-text';
-import CTASection from '@/app/components/CTASection';
+import SomeText from "@/app/components/some-text";
+import CTASection from "@/app/components/CTASection";
 
 export default function Home() {
-  return (
-    // <NextUIProvider>
-      <Grid.Container
-        gap={8}
-        alignItems="center"
-        justify='center'
-        css={{ minHeight: "70vh", flexDirection: "column" }}
-      >
-        <SomeText />
-        <CTASection />
-      </Grid.Container>
-    // </NextUIProvider>
-  )
+	return (
+		// <NextUIProvider>
+		<Grid.Container
+			gap={8}
+			alignItems="center"
+			justify="center"
+			css={{ minHeight: "70vh", flexDirection: "column" }}
+		>
+			<SomeText />
+			<CTASection />
+		</Grid.Container>
+		// </NextUIProvider>
+	);
 }
