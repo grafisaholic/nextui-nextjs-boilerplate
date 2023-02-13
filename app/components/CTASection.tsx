@@ -1,6 +1,7 @@
-import { Grid, Link, Button, Switch, SwitchEvent, useTheme } from '@nextui-org/react';
-import { } from 'next'
+import { Grid, Link, Button } from '@nextui-org/react';
 import Image from 'next/image';
+
+import ToggleSwitch from './toggle-switch';
 
 function CTASection() {
   return (
@@ -48,9 +49,7 @@ function CTASection() {
       </Grid>
 
       <Grid css={{ marginTop: 16}}>
-        <Switch 
-          css={{ marginLeft: "auto" }}
-        />
+        <ToggleSwitch />
       </Grid>
     </Grid.Container>
   )
