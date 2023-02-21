@@ -12,7 +12,7 @@ export default function Home() {
 			gap={8}
 			alignItems="center"
 			justify="center"
-			css={{ minHeight: "70vh", flexDirection: "column" }}
+			css={{ minHeight: "70vh", flexDirection: "column", paddingTop: "$52" }}
 		>
 			<SomeText />
 			<CTASection />
